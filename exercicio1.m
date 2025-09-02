@@ -1,7 +1,7 @@
 function t = exercicio1(func,func_d,x0)
 
 % nao alterar: inicio
-es = .01;
+es = 0.01;
 imax = 20;
 % nao alterar: fim
 
@@ -17,7 +17,7 @@ for ii =1:length(t)-1
       break
     endif
   endif
-  t(ii+1)=t(ii) - func(t(ii)/func_d(t(ii)));
+  t(ii+1)= (t(ii)) - (func(t(ii))/(func_d(t(ii))));
 endfor
 t=t(ii)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
